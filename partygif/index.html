@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <script src="gif.js"></script>
+    <script src="jsfeat-min.js"></script>
+    <script src="p5.min.js"></script>
+    <script src="p5.dom.min.js"></script>
+    <style>
+        canvas {
+            /* border-style: solid; */
+            display: block;
+        }
+
+        .recordDot {
+            height: 25px;
+            width: 25px;
+            background-color: #ff0000;
+            border-radius: 50%;
+            display: inline-block;
+            visibility: hidden;
+        }
+
+        body {
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+        }
+    </style>
+</head>
+
+<body>
+    <span class="recordDot"></span>
+    <p>Blur Size: <input type="range" id="blurSize" value="50"></p>
+    <p>Low Threshold: <input type="range" id="lowThreshold" value="15"></p>
+    <p>High Threshold: <input type="range" id="highThreshold" value="25"></p>
+
+    <script src="sketch.js"></script>
+</body>
+
+</html>
